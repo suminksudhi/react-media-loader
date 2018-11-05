@@ -1,13 +1,16 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
-import ExampleComponent from '@drifters/react-media-loader'
+import ExampleComponent from "@drifters/react-media-loader";
 
 export default class App extends Component {
-  render () {
+  render() {
+    const publicUrl = `Modern React component module ${
+      process.env.PUBLIC_URL
+    } hello`;
     return (
       <div>
-        <ExampleComponent text='Modern React component module' />
+        <ExampleComponent text={publicUrl} />
       </div>
-    )
+    );
   }
 }

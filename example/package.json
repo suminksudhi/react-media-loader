@@ -1,20 +1,21 @@
 {
   "name": "@drifters/react-media-loader-example",
-  "homepage": "https://suminksudhi.github.io/",
+  "homepage": "https://suminksudhi.github.io/react-media-loader",
   "version": "0.0.0",
   "license": "MIT",
   "private": true,
   "dependencies": {
+    "@drifters/react-media-loader": "file:..",
     "prop-types": "^15.6.2",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
-    "react-scripts": "^1.1.4",
-    "@drifters/react-media-loader": "file:.."
+    "react-scripts": "^1.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "sh -ac '. .env.${REACT_APP_ENV}; react-scripts build'",
     "build:prod": "REACT_APP_ENV=production npm run build",
+    "build:local": "REACT_APP_ENV=local npm run build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
