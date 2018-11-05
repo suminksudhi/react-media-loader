@@ -1,10 +1,10 @@
 {
   "name": "@drifters/react-media-loader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "used to dynamically load media in background or foreground",
   "author": "suminksudhi",
   "license": "MIT",
-  "repository": "suminksudhi/@drifters/react-media-loader",
+  "repository": "suminksudhi/react-media-loader",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
