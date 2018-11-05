@@ -1,6 +1,6 @@
 {
   "name": "@drifters/react-media-loader-example",
-  "homepage": "https://suminksudhi.github.io/@drifters/react-media-loader",
+  "homepage": "https://suminksudhi.github.io/",
   "version": "0.0.0",
   "license": "MIT",
   "private": true,
@@ -13,7 +13,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "sh -ac '. .env.${REACT_APP_ENV}; react-scripts build'",
+    "build:prod": "REACT_APP_ENV=production npm run build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
